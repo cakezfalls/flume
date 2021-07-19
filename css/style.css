@@ -1,0 +1,60 @@
+body {
+    font-family: 'Bebas Neue', cursive;
+}
+
+.about {
+    /* width: 1520px; */
+    height: 180px;
+    background: url(../img/59e39e86214239.5d92f59691931.jpg) center center/cover repeat;
+}
+
+.list {
+    margin: 10px 10px;
+    font-size: 30px;
+    list-style-type: none;
+    padding: 2px 0 2px 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.block1_music {
+    margin: 20px 0 20px 0;
+    height: 400px;
+    background-color: rgb(177, 212, 201);
+}
+
+.title {
+    text-align: center;
+}
+
+.album_tracklist .title_tracklist::before {
+    content: '▶ ';
+    font-size: 80%;
+    color: black;
+}
+
+.album_tracklist .open .title_tracklist::before {
+    content: '▼ ';
+}
+
+.block1_music .albums {
+    display: flex;
+    justify-content: space-around;
+}
+
+.album_name {
+    text-align: center;
+}
+
+.album_art {
+    height: 300px;
+    width: 300px;
+}
+
+.block2_video {
+    padding: 20px;
+    height: 400px;
+    background-color: blueviolet;
+}
