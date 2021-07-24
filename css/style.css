@@ -25,18 +25,35 @@ a {
     background-color: rgb(177, 212, 201);
 }
 
+.block1_music.green {
+    transition: 0.3s;
+    background-color: rgb(80, 219, 80);
+}
+
 .title {
     text-align: center;
 }
 
-.album_tracklist .title_tracklist::before {
-    content: '▶ ';
-    font-size: 80%;
-    color: black;
+.title_tracklist {
+    text-align: center;
+    display: block;
+    position: relative;
+    cursor: pointer;
 }
 
-.album_tracklist .open .title_tracklist::before {
-    content: '▼ ';
+.album_tracklist li {
+    position: absolute;
+    cursor: pointer;
+    display: none;
+}
+
+.album_tracklist.open li {
+    border: 1px solid rgb(194, 9, 9);
+    font-size: 15px;
+    width: 250px;
+    display: block;
+    position: relative;
+    background-color: rgb(216, 216, 216);
 }
 
 .block1_music .albums {
@@ -54,7 +71,18 @@ a {
 }
 
 .block2_video {
+    display: block;
     padding: 20px;
-    height: 400px;
+    height: 600px;
     background-color: blueviolet;
+}
+
+.block2_video.blue {
+    transition: 0.3s;
+    background-color: rgb(74, 74, 197);
+}
+
+.block3_merch {
+    width: 50px;
+    height: 500px;
 }
