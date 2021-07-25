@@ -1,3 +1,4 @@
+'use strict';
 const tracklist = document.querySelectorAll('.album_tracklist');
 const blockStyle = document.querySelector('.block1_music');
 const blockStyle2 = document.querySelector('.block2_video');

@@ -16,6 +16,7 @@ body {
 }
 
 a {
+    display: inline;
     text-decoration: none;
 }
 
@@ -32,9 +33,13 @@ a {
 
 .title {
     text-align: center;
+    font-size: 25px;
 }
 
 .title_tracklist {
+    border: 2px solid rgb(17, 83, 17);
+    font-weight: bold;
+    border-radius: 20%;
     text-align: center;
     display: block;
     position: relative;
@@ -72,7 +77,7 @@ a {
 
 .block2_video {
     display: block;
-    padding: 20px;
+    /* padding: 10px; */
     height: 600px;
     background-color: blueviolet;
 }
@@ -80,6 +85,11 @@ a {
 .block2_video.blue {
     transition: 0.3s;
     background-color: rgb(74, 74, 197);
+}
+
+.block2_video .videos {
+    display: flex;
+    justify-content: space-around;
 }
 
 .block3_merch {
